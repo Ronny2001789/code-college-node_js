@@ -1,0 +1,28 @@
+<div class="data-form">
+  <form class="form-signin" action="<%=`/courses/create`%>" method="POST">
+    <h2 class="form-signin-heading">Create a new course:</h2>
+    <label for="inputTitle">Title</label>
+    <input type="text" name="title" id="inputTitle" class="form-control" placeholder="Title" autofocus>
+    <label for="inputDescription">Description</label>
+    <textarea type="text" name="description" id="inputDescription" class="form-control" placeholder="Description"></textarea>
+    <label for="inputMaxStudents">Max Students</label>
+    <input type="number" name="maxStudents" id="inputMaxStudents"
+       class="form-control" placeholder="Max Students"
+       min="1" max="100">
+
+  <label for="inputCost">Choose Cost</label>
+<select name="cost" id="inputCost" class="form-control">
+  <option value="">-- Select Cost --</option>
+  <option value="1000">1000</option>
+  <option value="2000">2000</option>
+  <option value="3000">3000</option>
+  <option value="4000">4000</option>
+  <option value="5000">5000</option>
+  <option value="600000">6000</option>
+  <option value="7000">7000</option>
+</select>
+
+
+    <br /><button class="btn btn-lg btn-primary btn-block" type="submit">Save</button>
+  </form>
+</div>
